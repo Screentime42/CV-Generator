@@ -1,0 +1,55 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  }
+
+
+.card {
+  padding: 2em;
+  }
+
+p {
+  padding-bottom: 1em;
+  font-size: small;
+  }
+
+  .print-me {
+    display: none; 
+  } 
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-me, .print-me * {
+    visibility: visible;
+  }
+
+  .print-me {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: block;
+  }
+
+  body {
+    font-size: 12px; 
+    line-height: 1.2; 
+  }
+
+  .card, .form, .skill-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .print-me .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}

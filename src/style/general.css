@@ -1,0 +1,175 @@
+
+
+#list-container {
+   display: inline-grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   
+}
+
+
+.input {
+   padding: 10px;
+   display: grid;
+   flex-wrap:nowrap;
+   width: 90%;
+   background: #F4F4F9;
+   color:#060B14;
+}
+
+.form {
+   border: 2px solid #CCCCCC;
+   padding: 20px;
+   border-radius: 5px;
+   background: #ffffff;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 100%);
+   color:  #060B14;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   justify-items: center;
+   
+}
+
+.form label {
+   background-color: transparent;
+}
+
+.Button {
+   padding: 10px;
+   margin-top: 15px;
+}
+
+.list-input {
+   grid-column-start: 0;
+}
+
+
+.list-card {
+   margin-bottom: 10px;
+   padding: 10px; 
+   border-radius: 5px;
+   flex-wrap: nowrap;
+   width: 400px;
+   justify-content: space-around;
+   align-content: space-around;
+   list-style-type: none;
+   position: relative;
+   left: -2em;
+   top: -1em;
+   background: #ffffff;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 100%);
+}
+
+.subject-or-role {
+   float: left;
+   clear: right;
+   font-weight: bold;
+   font-size: large;
+}
+
+.educator-or-company {
+   float: left;
+   clear: left;
+   font-size: small;
+}
+
+.date-card {
+   float: right;
+   clear: right;
+   font-style: italic;
+   font-size: small;
+}
+
+.note-card {
+   float: left; 
+   clear: both;
+}
+
+.xButton {
+   float: right;
+   cursor: pointer;
+   position: relative;
+}
+
+.list-list {
+   white-space: pre-wrap;
+   margin-right: -2em;
+}
+
+#skills {
+   width: 100%;
+   margin: 0 auto;
+
+}
+
+.skills-list {
+   width: 100%;
+   max-width: 800px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-template-rows: auto;
+   gap: 15px;
+   margin: 0 auto;
+   padding: 5px;
+   list-style-type: none;
+}
+
+#skills-list-entry {
+   display: inline-block;
+}
+
+.skill-card {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 1em 0 1em;
+   align-items: center;
+   border: 1px solid #333333;
+   border-radius: 5px;
+   justify-items: center;
+}
+
+#cv-work-list, #cv-edu-list {
+   display: block;
+   width: 100%;
+   text-align: left;
+}
+
+.cv-work-list, .cv-edu-list {
+   display: flex;  
+   margin: 0;
+   width: 100%;
+ }
+
+ .role-date-container, .edu-date-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+ }
+ 
+ .list-item {
+   display: flex; 
+   flex-direction: column; 
+   padding: 0px;
+ }
+ 
+ .list-role, .list-subject {
+   font-weight: bold; 
+   font-size: 1.2em; 
+   margin-bottom: -10px; 
+ }
+ 
+ .list-company, .list-educator {
+   font-size: 1em;
+   color: #666666; 
+   margin-bottom: 5px; 
+ }
+ 
+ .list-dates {
+   font-style: italic; 
+   font-size: 0.9em; 
+   color: #999999; 
+   margin-bottom: 5px; 
+   text-align: right;
+ }
+ 
+
